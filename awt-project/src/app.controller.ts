@@ -9,4 +9,10 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+  @Get("status")
+  getSatus(): any {
+    return {
+      status: 200
+    }
+  }
 }
